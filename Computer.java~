@@ -1,0 +1,45 @@
+import java.util.List;
+
+public class Computer extends Player {
+  
+  /* inherited attributes
+ protected World        w;    // world that player lives in
+ protected String       name;
+ protected Location     location;
+ protected int          health = 100;
+ protected List<Thing>  things;
+ protected Thing        goal;
+   * */
+  
+  
+public Computer (World w, String name, Location location, int health, List<Thing>  things, Thing goal)
+{
+  super(w, name, location, health, things, goal);
+  this.health = health;
+}
+
+public void play(){ //Batman.interact(Human)
+   // allows for some interaction with a player
+  //System.out.println(w.getRoom(getLocation()));
+   // System.out.println(w.getRoom(getLocation()).getPlayers());
+  
+  if (this.name.equals("Thor")){  
+  System.out.println("I am Thor, the storm-weather God of sky and thunder according to Norse mythology. Embrace me!");
+  }
+  else if (this.name.equals("Batman")){
+    System.out.println("I am Batman, the legendary Dark Knight.");
+  }
+  else if (this.name.equals("Hades")){
+    System.out.println("I am Hades, guardian of the Underworld. I kill you.");
+  }
+  else{
+    return;
+  }
+  
+ }
+
+
+
+
+}
+  

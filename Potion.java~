@@ -1,0 +1,22 @@
+import java.util.List;
+
+public class Potion extends Item {
+  
+  public Potion (String name, Location location, int value){
+    super(name, location, value);
+  }
+  
+   public void interact(){
+   // allows for some interaction with room (and players/things in it)
+ }
+ 
+ /** Allows for interaction with the current thing and a specified player 
+   * 
+   * @param p is a player that is interacting with this current thing
+   */
+ public void interact(Player p){
+   // allows for some interaction with a player
+ }
+
+  
+}

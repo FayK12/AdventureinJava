@@ -1,0 +1,13 @@
+public class Chalice extends Item {
+  
+  public Chalice (String name, Location location, int mass){
+    super(name,location,mass);
+  }
+  
+  public Chalice (String name, Location location, int mass, int potency){
+    super(name,location,mass, potency);
+  }
+  
+  
+  
+}
